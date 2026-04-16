@@ -2,24 +2,21 @@ const plans = [
   {
     title: "1 Room",
     price: "£35",
-    desc: "Ideal entry offer to convert first-time enquiries.",
     featured: false,
   },
   {
     title: "2 Rooms",
     price: "£59",
-    desc: "Best everyday offer for call conversions.",
     featured: true,
   },
   {
     title: "End of Tenancy",
     price: "£89+",
-    desc: "High-intent package for tenants and landlords.",
     featured: false,
   },
   {
     title: "Premium Add-ons",
-    price: "+£15–£50",
+    price: "£15–£50",
     desc: "Stain removal, deodorising, protection, and upholstery upsells.",
     featured: false,
   },
@@ -28,13 +25,13 @@ const plans = [
 export default function Pricing() {
   return (
     <section style={{ padding: "4.5rem 0" }} id="pricing">
-      <div style={{ width: "min(1120px, calc(100% - 2rem))", margin: "0 auto" }}>
+      <div
+        style={{ width: "min(1120px, calc(100% - 2rem))", margin: "0 auto" }}
+      >
         <div style={{ maxWidth: 720, marginBottom: "2rem" }}>
           <span className="eyebrow">PRICING</span>
-          <h2 style={{ margin: "0 0 0.9rem", lineHeight: 1.05 }}>Simple pricing that sells</h2>
           <p style={{ color: "var(--muted)" }}>
-            Use these as your entry offers. Final price depends on size, condition, and treatment
-            needed.
+            Final price depends on size, condition, and treatment needed.
           </p>
         </div>
 
@@ -60,7 +57,9 @@ export default function Pricing() {
                   : {}),
               }}
             >
-              <div style={{ color: "var(--muted)", fontWeight: 700 }}>{p.title}</div>
+              <div style={{ color: "var(--muted)", fontWeight: 700 }}>
+                {p.title}
+              </div>
               <div
                 style={{
                   fontSize: "2rem",

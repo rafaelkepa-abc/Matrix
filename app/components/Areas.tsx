@@ -1,6 +1,16 @@
 const areas = [
-  "M1", "M2", "M3", "M4", "Ancoats", "Salford",
-  "Trafford", "Hulme", "Castlefield", "Northern Quarter", "Deansgate", "Stockport",
+  "M1",
+  "M2",
+  "M3",
+  "M4",
+  "Ancoats",
+  "Salford",
+  "Trafford",
+  "Hulme",
+  "Castlefield",
+  "Northern Quarter",
+  "Deansgate",
+  "Green Quarter",
 ];
 
 export default function Areas() {
@@ -23,11 +33,14 @@ export default function Areas() {
             Manchester city centre and surrounding areas
           </h2>
           <p style={{ color: "var(--muted)" }}>
-            Perfect for urgent call-outs across the centre and nearby neighbourhoods.
+            Perfect for urgent call-outs across the centre and nearby
+            neighbourhoods.
           </p>
         </div>
 
-        <div style={{ display: "flex", flexWrap: "wrap" as const, gap: "0.75rem" }}>
+        <div
+          style={{ display: "flex", flexWrap: "wrap" as const, gap: "0.75rem" }}
+        >
           {areas.map((a) => (
             <span
               key={a}

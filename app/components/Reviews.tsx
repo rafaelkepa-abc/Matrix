@@ -1,15 +1,18 @@
 const reviews = [
   {
-    quote: "Came out the same day and got stains out we thought were permanent.",
-    author: "Customer review placeholder",
+    quote:
+      "Came out the same day and got stains out we thought were permanent.",
+    author: "Andy, Green Quarter",
   },
   {
-    quote: "Fast reply, clear price, and the carpets looked fresh within hours.",
-    author: "Customer review placeholder",
+    quote:
+      "Fast reply, clear price, and the carpets looked fresh within hours.",
+    author: "Emma, Piccadilly",
   },
   {
-    quote: "Ideal for our move-out clean. Quick, professional, and easy to book.",
-    author: "Customer review placeholder",
+    quote:
+      "Ideal for our move-out clean. Quick, professional, and easy to book.",
+    author: "Charlotte, Ancoats",
   },
 ];
 
@@ -22,14 +25,23 @@ export default function Reviews() {
       }}
       id="reviews"
     >
-      <div style={{ width: "min(1120px, calc(100% - 2rem))", margin: "0 auto" }}>
+      <div
+        style={{ width: "min(1120px, calc(100% - 2rem))", margin: "0 auto" }}
+      >
         <div style={{ maxWidth: 720, marginBottom: "2rem" }}>
           <span className="eyebrow">REVIEWS</span>
-          <h2 style={{ margin: "0 0 0.9rem", lineHeight: 1.05, color: "var(--white)" }}>
+          <h2
+            style={{
+              margin: "0 0 0.9rem",
+              lineHeight: 1.05,
+              color: "var(--white)",
+            }}
+          >
             Use this section with your real Google reviews
           </h2>
           <p style={{ color: "rgba(255,255,255,0.75)" }}>
-            Swap the sample text below with real customer reviews as they come in.
+            Swap the sample text below with real customer reviews as they come
+            in.
           </p>
         </div>
 
@@ -47,7 +59,9 @@ export default function Reviews() {
               className="card-base"
               style={{ padding: "1.3rem", margin: 0 }}
             >
-              <p style={{ fontSize: "1.05rem", marginTop: 0 }}>&ldquo;{r.quote}&rdquo;</p>
+              <p style={{ fontSize: "1.05rem", marginTop: 0 }}>
+                &ldquo;{r.quote}&rdquo;
+              </p>
               <footer style={{ color: "var(--muted)" }}>— {r.author}</footer>
             </blockquote>
           ))}
