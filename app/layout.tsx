@@ -10,19 +10,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title:
-    "Matrix Carpet Cleaning Manchester | Same-Day Carpet Cleaning & Stain Specialists",
+    "Matrix Carpet Cleaning Manchester | Pet Stain & Odour Removal Expert",
   description:
-    "Same-day carpet cleaning in Manchester city centre and surrounding areas. Premium stain removal, fast drying, end of tenancy carpet cleaning, upholstery cleaning, and commercial cleaning.",
+    "First class cleaning and premium stain specialist for Manchester and surrounding areas.",
   metadataBase: new URL("https://matrixcarpetcleaning.com"),
   alternates: { canonical: "/" },
   icons: {
-    icon: "/matrix_logo.png",
+    icon: "/new_matrix_logo.png",
   },
   openGraph: {
     url: "https://matrixcarpetcleaning.com/",
     title: "Matrix Carpet Cleaning Manchester",
     description:
-      "Same-day carpet cleaning and premium stain specialist in Manchester.",
+      "First class cleaning and premium stain specialist for Manchester and surrounding areas.",
     type: "website",
     locale: "en_GB",
   },
@@ -41,7 +41,7 @@ const jsonLd = {
   email: "matrixmanchester@gmail.com",
   areaServed: ["Manchester City Centre", "Manchester"],
   description:
-    "Same-day carpet cleaning and premium stain specialist in Manchester city centre and surrounding areas.",
+    "First class cleaning and premium stain specialist for Manchester and surrounding areas.",
   priceRange: "££",
   url: "https://matrixcarpetcleaning.com/",
   sameAs: [],
