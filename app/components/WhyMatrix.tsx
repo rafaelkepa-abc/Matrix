@@ -1,19 +1,15 @@
 const features = [
   {
-    title: "Fast response",
-    desc: "Call and WhatsApp-first setup for quick bookings",
+    title: "Eco-friendly",
+    desc: "Our cleaning products clean brilliantly, and are made using plant-based ingredients that reduce reliance on petrochemicals. Our formulations contain biodegradable ingredients and biological formulas, designed to break down naturally in the environment after use.",
   },
   {
-    title: "Strong positioning",
-    desc: "Same-day service plus premium stain expertise",
+    title: "Customer Satisfaction Guarantee",
+    desc: "If any part of our clean does not meet your expectations, and you inform us within two working days, we will re-clean the specific area again, free of charge. Simply report within 48 hours and we will make it right for you.",
   },
   {
-    title: "High-converting offer",
-    desc: "Clear entry pricing with premium upsells",
-  },
-  {
-    title: "Mobile-first site",
-    desc: "Designed to turn clicks into calls fast",
+    title: "Reference Checked Technicians",
+    desc: "Our technicians are experienced professionals, background checked, friendly and fully insured. We only work with people who care and are honest. We are very lucky.",
   },
 ];
 
@@ -38,11 +34,10 @@ export default function WhyMatrix() {
         className="why-responsive"
       >
         <div>
-          <span className="eyebrow">WHY MATRIX</span>
+          <span className="eyebrow">WHY PEOPLE CHOOSE MATRIX?</span>
           <p style={{ color: "rgba(255,255,255,0.78)" }}>
-            Most people booking carpet cleaning want three things: a fast
-            answer, a clear price, and confidence the job will be done properly.
-            Matrix is positioned around all three.
+            When you choose Matrix Cleaning Company you&apos;re opting for quality service at
+            affordable price.
           </p>
         </div>
 

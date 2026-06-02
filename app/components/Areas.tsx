@@ -11,6 +11,8 @@ const areas = [
   "Northern Quarter",
   "Deansgate",
   "Green Quarter",
+  "Chorlton",
+  "Didsbury",
 ];
 
 export default function Areas() {
@@ -32,10 +34,6 @@ export default function Areas() {
           <h2 style={{ margin: "0 0 0.9rem", lineHeight: 1.05 }}>
             Manchester city centre and surrounding areas
           </h2>
-          <p style={{ color: "var(--muted)" }}>
-            Perfect for urgent call-outs across the centre and nearby
-            neighbourhoods.
-          </p>
         </div>
 
         <div

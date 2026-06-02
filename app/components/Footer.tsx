@@ -22,7 +22,7 @@ export default function Footer() {
         <div>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "0.85rem" }}>
             <Image
-              src="/matrix_logo.png"
+              src="/new_matrix_logo.png"
               alt="Matrix Carpet Cleaning Manchester"
               width={170}
               height={52}
@@ -34,8 +34,7 @@ export default function Footer() {
             />
           </div>
           <p style={{ marginTop: "0.75rem" }}>
-            Same-day carpet cleaning and premium stain specialist for Manchester city centre and
-            surrounding areas.
+           First Class Cleaning Company in Manchester. Your Local Expert. Trusted and Honest.
           </p>
         </div>
 

@@ -28,10 +28,10 @@ export default function Header() {
       }}
     >
       <div
+        className="py-2 md:py-3"
         style={{
           width: "min(1120px, calc(100% - 2rem))",
           margin: "0 auto",
-          minHeight: 112,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -42,19 +42,16 @@ export default function Header() {
         <Link
           href="#home"
           aria-label="Matrix Carpet Cleaning Manchester home"
-          style={{ display: "inline-flex", alignItems: "center", gap: "0.85rem" }}
+          className="inline-flex items-center md:my-1"
         >
           <Image
-            src="/matrix_logo.png"
-            alt="Matrix Carpet Cleaning Manchester"
-            width={170}
-            height={52}
+            src="/new_logo.JPG"
+            alt="Matrix Cleaning Company"
+            width={500}
+            height={500}
+            sizes="(max-width: 767px) 84px, 250px"
             priority
-            style={{
-              height: 84,
-              width: "auto",
-              flexShrink: 0,
-            }}
+            className="shrink-0 rounded-full object-cover w-[84px] h-[84px] md:w-[250px] md:h-[250px] md:mx-1"
           />
         </Link>
 
