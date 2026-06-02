@@ -8,6 +8,7 @@ import Pricing from "./components/Pricing";
 import Areas from "./components/Areas";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
+import Certificates from "./components/Certificates";
 import Footer from "./components/Footer";
 import StickyCall from "./components/StickyCall";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <Areas />
         <Reviews />
         <Contact />
+        <Certificates />
       </main>
       <Footer />
       <StickyCall />

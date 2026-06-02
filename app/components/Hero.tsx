@@ -64,9 +64,9 @@ export default function Hero() {
             >
               YOUR LOCAL
               <br />
-              CLEANING EXPERT.
+              CLEANING EXPERT
               <br />
-              Trusted and Honest.
+              Trusted and Honest
             </h1>
             <p style={{ fontSize: "1.15rem", maxWidth: "56ch", color: "var(--muted)" }}>
               2-hour arrival slots, premium stain treatment, fast drying, and instant quotes for

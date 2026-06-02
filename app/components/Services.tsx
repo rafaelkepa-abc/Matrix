@@ -34,11 +34,11 @@ export default function Services() {
         <div style={{ maxWidth: 720, marginBottom: "2rem" }}>
           <span className="eyebrow">SERVICES</span>
           <h2 style={{ margin: "0 0 0.9rem", lineHeight: 1.05 }}>
-            First class cleaning. Satisfaction Guaranteed.
+          Happy customers. 100% Satisfaction Guaranteed.
           </h2>
-          <p style={{ color: "var(--muted)" }}>
+          {/* <p style={{ color: "var(--muted)" }}>
             Brighter, cleaner, healthier home. Fabulous fresh home feeling we all deserve.
-          </p>
+          </p> */}
         </div>
 
         <div
