@@ -6,7 +6,7 @@ export default function Footer() {
       style={{
         background: "#081b2f",
         color: "rgba(255,255,255,0.85)",
-        padding: "2.2rem 0 5rem",
+        padding: "2.2rem 0",
       }}
     >
       <div
@@ -51,21 +51,30 @@ export default function Footer() {
           </p>
         </div>
 
-        <div>
-          <h3 style={{ color: "var(--white)" }}>Quick links</h3>
-          <p>
-            <a href="#services" className="hover:underline">
-              Services
-            </a>
-            <br />
-            <a href="#pricing" className="hover:underline">
-              Pricing
-            </a>
-            <br />
-            <a href="#areas" className="hover:underline">
-              Areas
-            </a>
-          </p>
+        <div
+          style={{
+            borderRadius: 18,
+            overflow: "hidden",
+            border: "1px solid rgba(255,255,255,0.12)",
+            background: "rgba(255,255,255,0.06)",
+            padding: "0.75rem",
+          }}
+          aria-label="Footer image"
+        >
+          <Image
+            src="/footer_image_new.jpeg"
+            alt="Matrix Cleaning Company"
+            width={700}
+            height={520}
+            sizes="(max-width: 680px) 100vw, (max-width: 960px) 50vw, 320px"
+            style={{
+              width: "100%",
+              height: "auto",
+              objectFit: "contain",
+              display: "block",
+              borderRadius: 12,
+            }}
+          />
         </div>
       </div>
 

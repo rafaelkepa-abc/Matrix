@@ -37,12 +37,8 @@ export default function Reviews() {
               color: "var(--white)",
             }}
           >
-            Use this section with your real Google reviews
+            HAPPY CUSTOMERS 100% SATISFACTION GUARANTEED.
           </h2>
-          <p style={{ color: "rgba(255,255,255,0.75)" }}>
-            Swap the sample text below with real customer reviews as they come
-            in.
-          </p>
         </div>
 
         <div

@@ -9,7 +9,7 @@ export default function Certificates() {
       >
         <span className="eyebrow">ACCREDITATIONS</span>
         <h2 style={{ margin: "0 0 2.5rem", lineHeight: 1.05 }}>
-          Certified &amp; trusted professionals.
+          Certified &amp; Trusted Professionals.
         </h2>
 
         <div
