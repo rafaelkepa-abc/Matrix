@@ -1,6 +1,6 @@
 const stats = [
-  { value: "From £35", label: "Single room cleaning" },
-  { value: "From £59", label: "Two-room offer" },
+  { value: "From £55", label: "Single room cleaning" },
+  { value: "From £77", label: "Two-room offer" },
   { value: "From £89", label: "End of tenancy packages" },
   { value: "2-Hour Slots", label: "Same-day availability" },
 ];

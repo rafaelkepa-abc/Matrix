@@ -1,20 +1,4 @@
-const reviews = [
-  {
-    quote:
-      "Came out the same day and got stains out we thought were permanent.",
-    author: "Andy, Green Quarter",
-  },
-  {
-    quote:
-      "Fast reply, clear price, and the carpets looked fresh within hours.",
-    author: "Emma, Piccadilly",
-  },
-  {
-    quote:
-      "Ideal for our move-out clean. Quick, professional, and easy to book.",
-    author: "Charlotte, Ancoats",
-  },
-];
+import Image from "next/image";
 
 export default function Reviews() {
   return (
@@ -37,37 +21,32 @@ export default function Reviews() {
               color: "var(--white)",
             }}
           >
-            HAPPY CUSTOMERS 100% SATISFACTION GUARANTEED.
+            What our customers say about us
           </h2>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3,1fr)",
-            gap: "1rem",
-          }}
-          className="reviews-responsive"
+        <a
+          href="https://share.google/ddURNoDmSD4aQ1WGG"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Leave a Google review for Matrix Cleaning Company"
+          style={{ display: "block" }}
         >
-          {reviews.map((r, i) => (
-            <blockquote
-              key={i}
-              className="card-base"
-              style={{ padding: "1.3rem", margin: 0 }}
-            >
-              <p style={{ fontSize: "1.05rem", marginTop: 0 }}>
-                &ldquo;{r.quote}&rdquo;
-              </p>
-              <footer style={{ color: "var(--muted)" }}>— {r.author}</footer>
-            </blockquote>
-          ))}
-        </div>
+          <Image
+            src="/reviews.png"
+            alt="Google reviews for Matrix Cleaning Company"
+            width={1774}
+            height={887}
+            sizes="(max-width: 1120px) 100vw, 1120px"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              borderRadius: "var(--radius)",
+            }}
+          />
+        </a>
       </div>
-
-      <style>{`
-        @media (max-width: 960px) { .reviews-responsive { grid-template-columns: 1fr 1fr !important; } }
-        @media (max-width: 680px) { .reviews-responsive { grid-template-columns: 1fr !important; } }
-      `}</style>
     </section>
   );
 }

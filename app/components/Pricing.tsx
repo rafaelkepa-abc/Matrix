@@ -3,12 +3,12 @@ import Image from "next/image";
 const plans = [
   {
     title: "1 Room",
-    price: "£35",
+    price: "£55",
     featured: false,
   },
   {
     title: "2 Rooms",
-    price: "£59",
+    price: "£77",
     featured: true,
   },
   {
