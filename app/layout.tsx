@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   icons: {
     icon: "/new_matrix_logo.png",
+    apple: "/new_matrix_logo.png",
   },
   openGraph: {
     url: "https://matrixcarpetcleaning.com/",
@@ -25,6 +26,18 @@ export const metadata: Metadata = {
       "First class cleaning and premium stain specialist for Manchester and surrounding areas.",
     type: "website",
     locale: "en_GB",
+    images: [
+      {
+        url: "/new_matrix_logo.png",
+        width: 512,
+        height: 512,
+        alt: "Matrix Cleaning Company",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    images: ["/new_matrix_logo.png"],
   },
   robots: { index: true, follow: true },
 };
