@@ -33,13 +33,6 @@ const mutedParagraph = {
   lineHeight: 1.6,
 } as const;
 
-const petHomeRefreshLogos = [
-  { src: "/pet-home-refresh-logo.jpg", alt: "Matrix Pet Home Refresh" },
-  { src: "/pet-home-refresh-logo-pink.png", alt: "" },
-  { src: "/pet-home-refresh-logo.jpg", alt: "" },
-  { src: "/pet-home-refresh-logo-pink.png", alt: "" },
-];
-
 export default function Services() {
   return (
     <section style={{ padding: "4.5rem 0" }} id="services">
@@ -75,23 +68,19 @@ export default function Services() {
           <article className="card-base pet-home-refresh">
             <div className="phr-header">
               <div className="phr-logos">
-                {petHomeRefreshLogos.map((logo, index) => (
-                  <Image
-                    key={index}
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={400}
-                    height={150}
-                    className="phr-logo"
-                    aria-hidden={index > 0}
-                  />
-                ))}
+                <Image
+                  src="/pet-home-refresh-logo-pink.png"
+                  alt="Matrix Pet Home Refresh"
+                  width={800}
+                  height={260}
+                  className="phr-logo"
+                />
               </div>
               <Image
                 src="/new_premium_service_badge.png"
                 alt="New Premium Service"
-                width={520}
-                height={160}
+                width={700}
+                height={215}
                 className="phr-badge"
               />
             </div>
@@ -253,11 +242,10 @@ export default function Services() {
         }
 
         .phr-logo {
-          flex: 1 1 0;
-          min-width: 0;
-          width: 100%;
+          width: auto;
           height: auto;
-          max-height: 110px;
+          max-height: 220px;
+          max-width: min(720px, 65vw);
           object-fit: contain;
           display: block;
           border-radius: 10px;
@@ -267,8 +255,8 @@ export default function Services() {
           flex-shrink: 0;
           height: auto;
           width: auto;
-          max-height: 115px;
-          max-width: min(420px, 36vw);
+          max-height: 175px;
+          max-width: min(560px, 42vw);
           object-fit: contain;
           display: block;
         }
@@ -290,7 +278,7 @@ export default function Services() {
           font-weight: 800;
           margin: 0 0 1.25rem;
           line-height: 1.2;
-          color: #d9468f;
+          color: #F567AD;
         }
 
         .phr-body {
@@ -358,48 +346,23 @@ export default function Services() {
         }
 
         .phr-cta-accent {
-          color: #d9468f;
+          color: #F567AD;
         }
 
         .phr-cta-btn {
-          background: linear-gradient(
-            180deg,
-            #2a1400 0%,
-            #4a2e00 20%,
-            #7a5800 45%,
-            #8a6600 55%,
-            #4a2e00 80%,
-            #2a1400 100%
-          );
-          color: #f0c000;
-          border: 2px solid #c8930a;
-          box-shadow:
-            inset 0 1px 0 rgba(240, 192, 0, 0.35),
-            inset 0 -1px 0 rgba(0, 0, 0, 0.55),
-            0 0 0 1px rgba(200, 147, 10, 0.3),
-            0 4px 14px rgba(42, 20, 0, 0.45);
-          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+          background: #000;
+          color: #fff;
+          border: 2px solid #000;
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
           font-weight: 700;
         }
 
         .phr-cta-btn:hover {
-          background: linear-gradient(
-            180deg,
-            #351a00 0%,
-            #5a3800 20%,
-            #8a6600 45%,
-            #9a7400 55%,
-            #5a3800 80%,
-            #351a00 100%
-          );
-          border-color: #e0a80c;
-          color: #ffe040;
+          background: #1a1a1a;
+          border-color: #1a1a1a;
+          color: #fff;
           transform: translateY(-1px);
-          box-shadow:
-            inset 0 1px 0 rgba(255, 224, 64, 0.4),
-            inset 0 -1px 0 rgba(0, 0, 0, 0.55),
-            0 0 0 1px rgba(224, 168, 12, 0.4),
-            0 6px 18px rgba(42, 20, 0, 0.5);
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
         }
 
         .phr-video-wrap {
@@ -463,9 +426,8 @@ export default function Services() {
           .phr-body-wrap { padding: 1.25rem; }
           .phr-header { padding: 1.25rem; }
           .phr-cta { padding: 1.25rem; }
-          .phr-logos { flex-wrap: wrap; gap: 0.75rem; }
-          .phr-logo { flex: 1 1 calc(50% - 0.75rem); max-height: 72px; }
-          .phr-badge { max-height: 90px; max-width: min(360px, 75vw); }
+          .phr-logo { max-height: 150px; max-width: min(520px, 90vw); }
+          .phr-badge { max-height: 130px; max-width: min(480px, 85vw); }
         }
       `}</style>
     </section>
