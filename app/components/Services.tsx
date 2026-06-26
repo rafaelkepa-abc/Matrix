@@ -79,8 +79,8 @@ export default function Services() {
               <Image
                 src="/new_premium_service_badge.png"
                 alt="New Premium Service"
-                width={700}
-                height={215}
+                width={840}
+                height={260}
                 className="phr-badge"
               />
             </div>
@@ -255,8 +255,8 @@ export default function Services() {
           flex-shrink: 0;
           height: auto;
           width: auto;
-          max-height: 175px;
-          max-width: min(560px, 42vw);
+          max-height: 200px;
+          max-width: min(640px, 48vw);
           object-fit: contain;
           display: block;
         }
@@ -424,10 +424,31 @@ export default function Services() {
         @media (max-width: 680px) {
           .services-responsive { grid-template-columns: 1fr !important; }
           .phr-body-wrap { padding: 1.25rem; }
-          .phr-header { padding: 1.25rem; }
+          .phr-header {
+            padding: 1.25rem;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 1rem;
+          }
           .phr-cta { padding: 1.25rem; }
-          .phr-logo { max-height: 150px; max-width: min(520px, 90vw); }
-          .phr-badge { max-height: 130px; max-width: min(480px, 85vw); }
+          .phr-badge {
+            order: -1;
+            align-self: center;
+            max-height: 155px;
+            max-width: min(480px, 96vw);
+            width: auto;
+          }
+          .phr-logos {
+            flex: none;
+            width: 100%;
+            justify-content: center;
+          }
+          .phr-logo {
+            max-height: none;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+          }
         }
       `}</style>
     </section>
