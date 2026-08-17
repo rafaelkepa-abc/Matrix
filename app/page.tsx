@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import WhyMatrix from "./components/WhyMatrix";
 import Pricing from "./components/Pricing";
 import Areas from "./components/Areas";
+import Products from "./components/Products";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Certificates from "./components/Certificates";
@@ -24,6 +25,7 @@ export default function Home() {
         <WhyMatrix />
         <Pricing />
         <Areas />
+        <Products />
         <Reviews />
         <Contact />
         <Certificates />
