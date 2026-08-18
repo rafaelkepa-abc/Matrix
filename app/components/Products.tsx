@@ -42,7 +42,7 @@ export default function Products() {
             <p className="letter-copy">
               A powerful solution in just two steps, two beautiful bottles so
               you can keep up with all the challenges between professional
-              carpet treatments — and these two products are your daily
+              carpet treatments and these two products are your daily
               defence, tackling everyday pet mess, keeping fabrics fresh and
               helping maintain those high standards for longer.
             </p>
