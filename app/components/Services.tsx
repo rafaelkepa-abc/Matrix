@@ -65,6 +65,18 @@ export default function Services() {
             </article>
           ))}
 
+          <div className="phr-pets" aria-hidden="true">
+            <Image
+              src="/dog_and_cat.png"
+              alt=""
+              width={1600}
+              height={885}
+              sizes="(max-width: 680px) 92vw, (max-width: 1120px) 70vw, 680px"
+              quality={95}
+              className="phr-pets-img"
+            />
+          </div>
+
           <article className="card-base pet-home-refresh">
             <div className="phr-header">
               <div className="phr-logos">
@@ -214,6 +226,21 @@ export default function Services() {
       </div>
 
       <style>{`
+        .phr-pets {
+          grid-column: 1 / -1;
+          display: flex;
+          justify-content: center;
+          margin: 0.35rem 0 -1rem;
+          line-height: 0;
+          pointer-events: none;
+        }
+
+        .phr-pets-img {
+          width: min(100%, 680px);
+          height: auto;
+          display: block;
+        }
+
         .pet-home-refresh {
           grid-column: 1 / -1;
           padding: 0;
@@ -419,10 +446,17 @@ export default function Services() {
         @media (max-width: 960px) {
           .services-responsive { grid-template-columns: 1fr 1fr !important; }
           .phr-body { grid-template-columns: 1fr !important; }
+          .phr-pets-img { width: min(100%, 540px); }
         }
 
         @media (max-width: 680px) {
           .services-responsive { grid-template-columns: 1fr !important; }
+          .phr-pets {
+            margin: 0.15rem 0 -1rem;
+          }
+          .phr-pets-img {
+            width: min(100%, 420px);
+          }
           .phr-body-wrap { padding: 1.25rem; }
           .phr-header {
             padding: 1.25rem;

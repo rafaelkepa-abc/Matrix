@@ -84,7 +84,7 @@ export default function Products() {
             Winning every day. Proudly mastering special tasks.
           </p>
           <p className="closer-love">
-            Love your pet <span aria-hidden="true">+</span> Love your home.
+            Love your pet <span aria-hidden="true">+</span> Love your home
           </p>
           <p className="closer-avail">
             Soon available online, your local pet store and makers markets near
