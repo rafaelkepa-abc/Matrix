@@ -170,9 +170,9 @@ export default function Services() {
             <div className="phr-cta">
               <p className="phr-cta-text">
                 <span className="phr-cta-accent">
-                  Fresh home is not just for Christmas.
+                 <i>Fresh home is not just for Christmas.</i>
                 </span>{" "}
-                Book your HOME REFRESH this summer.
+                Book your HOME REFRESH this Autumn.
               </p>
               <a
                 className="btn btn-small phr-cta-btn"
